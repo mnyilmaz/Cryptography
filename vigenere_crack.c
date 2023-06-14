@@ -1,6 +1,7 @@
-#include <stdio.h>#define KEY_LENGTH 2 // Can be anything from 1 to 13
+#include <stdio.h>
+#define KEY_LENGTH 2 // Can be anything from 1 to 13
 
-main(){  
+int main(){  
   unsigned char ch;  
   FILE *fpIn, *fpOut;  
   int i;  unsigned char key[KEY_LENGTH] = {0x00, 0x00};
@@ -23,5 +24,5 @@ main(){
  
   fclose(fpIn);  
   fclose(fpOut);  
-  return;
+  return 0;
 } 
